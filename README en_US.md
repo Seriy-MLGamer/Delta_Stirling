@@ -1,13 +1,13 @@
 <!--
-(C) 2024 Серый MLGamer. Все свободы предоставлены.
+(C) 2024 Серый MLGamer. All freedoms preserved.
 Дзен: <https://dzen.ru/seriy_mlgamer>
 SoundCloud: <https://soundcloud.com/seriy_mlgamer>
 YouTube: <https://www.youtube.com/@Seriy_MLGamer>
 GitHub: <https://github.com/Seriy-MLGamer>
 E-mail: <Seriy-MLGamer@yandex.ru>
 
-Этот файл - свободная документация: вы можете перераспространять его и/или изменять его на условиях лицензии Creative Commons Атрибуция-СохранениеУсловий 4.0 Всемирной: <https://creativecommons.org/licenses/by-sa/4.0/deed.ru>.
-Этот файл распространяется в надежде, что он будет полезен, но БЕЗО ВСЯКИХ ГАРАНТИЙ; даже без неявной гарантии ТОВАРНОГО ВИДА или ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЁННЫХ ЦЕЛЕЙ. Подробнее смотрите в лицензии.
+This file is free documentation: you can redistribute it and/or modify it under the terms of the Creative Commons Attribution-ShareAlike 4.0 International license: <https://creativecommons.org/licenses/by-sa/4.0/>.
+This file is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the license for more details.
 -->
 
 # "Delta" Stirling engine
@@ -35,8 +35,6 @@ Modern car and powerplant engines, solar panels have not so much efficiency. The
 Slow heat exchange problem has been solved by invention of the thin heat exchanger (inner thickness is 0.5 mm) with sealed displacement piston. 20 heat exchangers are combined into a radiator to increase area, which means power.
 
 *Two*, hot and cold, heat exchangers are funtional from *both* sides, i. e. these *two* sides are connected to *two* working cylinders and to each other by *two* regenerators. That ensures full load of heat exchangers.
-
-Gas distribution mechanism exists (but, maybe, it's redundant; tests will show it).
 
 *By the way, I want to draw your attention to my article about previous Stirling engine model of similar design at [Дзен](https://dzen.ru/a/Ywe-duoiYVKAe5At?share_to=link).*
 
