@@ -1,0 +1,54 @@
+/*
+(C) 2024 Серый MLGamer. All freedoms preserved.
+Дзен: <https://dzen.ru/seriy_mlgamer>
+SoundCloud: <https://soundcloud.com/seriy_mlgamer>
+YouTube: <https://www.youtube.com/@Seriy_MLGamer>
+GitHub: <https://github.com/Seriy-MLGamer>
+E-mail: <Seriy-MLGamer@yandex.ru>
+
+This file is part of Delta Stirling.
+Delta Stirling is free work: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+Delta Stirling is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with Delta Stirling. If not, see <https://www.gnu.org/licenses/>.
+*/
+
+exchanger_thickness=.005
+heater_temperature=1273
+temperature_drop_coefficient=.935
+gas_conductiveness=.0244
+gas_capacity=800
+gas_density=1.2929
+
+temperatures_count=1000
+temperatures=new(temperatures_count, 1, FLOAT)
+clean(temperatures, heater_temperature*temperature_drop_coefficient)
+new_temperatures=clone(temperatures)
+dt=1/1000000
+dl=exchanger_thickness/temperatures_count
+dm=gas_density*dl
+t=0
+while 1
+{
+	temperatures[0]=heater_temperature
+	temperatures[temperatures_count-1]=heater_temperature
+	if !(t%100)
+	{
+		clear()
+		for (a=0; a!=temperatures_count; a+1)
+		{
+			op_cn(OP_COPY, 0, get_color(256*(temperatures[a]-heater_temperature*temperature_drop_coefficient)/(heater_temperature*(1-temperature_drop_coefficient)), 256*(temperatures[a]-heater_temperature*temperature_drop_coefficient)/(heater_temperature*(1-temperature_drop_coefficient)), 0), floor(a*WINDOW_XSIZE/temperatures_count), 0, floor((a+1)*WINDOW_XSIZE/temperatures_count)-floor(a*WINDOW_XSIZE/temperatures_count), WINDOW_YSIZE)
+		}
+		sprintf(0, "t=%i T=%f", t, op_cn(OP_SUM, temperatures)/temperatures_count)
+		print(0)
+		frame(1000)
+	}
+	for (a=0; a!=temperatures_count-1; a+1)
+	{
+		dT=temperatures[a+1]-temperatures[a]
+		dP=gas_conductiveness*dT/dl
+		new_temperatures[a]+dP*dt/(2*gas_capacity*dm)
+		new_temperatures[a+1]-dP*dt/(2*gas_capacity*dm)
+	}
+	copy(temperatures, new_temperatures)
+	t+1
+}
