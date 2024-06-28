@@ -54,11 +54,13 @@ You should have received a copy of the GNU General Public License along with thi
 
 # Project progress
 
-The necessary design documentation has been developed. Technological... isn't as necessary. All is ready for the direct parts production and then for the Stirling engine assembly.
+The engine is at the initial stage of manufacturing. Sheet metal parts prototypes have been made  in order to master the welding technique.
+
+![Parts prototypes](share/parts%20prototypes.jpg)
 
 You have an opportunity to study this model design from "src/model.FCStd" 3D-model made using [FreeCAD](https://freecad.org) 0.20.2.
 
-Also there are the drawings in PDF and SVG formats, the "metal scheme.dxf" laser cutter scheme, the models for the CNC machines and 3D-printers in STEP format in the "bin" folder.
+Also there are the drawings in PDF and SVG formats, the laser cutter schemes in DXF format, the models for the CNC machines and 3D-printers in STEP format in the "bin" folder.
 
 You are welcome with material and professional support of this project.
 
