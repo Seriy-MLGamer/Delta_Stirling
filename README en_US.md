@@ -36,7 +36,7 @@ Slow heat exchange problem has been solved by invention of the thin heat exchang
 
 *Two*, hot and cold, heat exchangers are funtional from *both* sides, i. e. these *two* sides are connected to *two* working cylinders and to each other by *two* regenerators. That ensures full load of heat exchangers.
 
-The detailed engine description is in the "Delta" Stirling engine: overview" article available at [Дзен](https://dzen.ru/a/ZjI1lzHqzjpZLhe3?share_to=link) and in [this repository](Двигатель%20Стирлинга%20&laquo;Дельта&raquo;:%20обзорная%20статья.md) (only Russian language).
+The detailed engine description is in the "Delta" Stirling engine: overview" article available at [Дзен](https://dzen.ru/a/ZjI1lzHqzjpZLhe3?share_to=link) and in [this repository](Двигатель%20Стирлинга%20%C2%ABДельта%C2%BB:%20обзорная%20статья.md) (Russian language only).
 
 *By the way, I want to draw your attention to my article about previous Stirling engine model of similar design at [Дзен](https://dzen.ru/a/Ywe-duoiYVKAe5At?share_to=link).*
 
@@ -54,22 +54,24 @@ You should have received a copy of the GNU General Public License along with thi
 
 # Project progress
 
-The engine is at the initial stage of manufacturing. Sheet metal parts prototypes have been made  in order to master the welding technique.
+The engine project is progressing towards the main stage of manufacturing. Parts prototypes *laser* welding has been completed successfully. Then the main set of parts will be produced and fused into a Stirling engine.
 
-![Parts prototypes](share/parts%20prototypes.jpg)
+![Welding 1](share/welding%201.jpg)
 
-You have an opportunity to study this model design from "src/model.FCStd" 3D-model made using [FreeCAD](https://freecad.org) 0.20.2.
+![Welding 2](share/welding%202.jpg)
 
-Also there are the drawings in PDF and SVG formats, the laser cutter schemes in DXF format, the models for the CNC machines and 3D-printers in STEP format in the "bin" folder.
+You have an opportunity to study this model design from "src/model.FCStd" 3D-model made using free (as in freedom) [FreeCAD](https://freecad.org) 0.20.2.
 
-You are welcome with material and professional support of this project.
+Also there are the drawings in PDF and SVG formats, the laser cutter schemes in DXF format, the models for the CNC machines and 3D-printers in STEP and STL formats in the "bin" folder.
+
+You are welcome with material and professional support to this project.
 
 ## Material support
 
 The project is at the finish line! Now it requires just much money on materials and hardware, then the engine will be done.
 
   * [DonationAlerts](https://donationalerts.com/r/seriy_mlgamer)
-  * [donate*stream](https://donate.stream/seriy_mlgamer)
+  * [donate&bull;stream](https://donate.stream/seriy_mlgamer)
   * [Boosty](https://boosty.to/seriy_mlgamer)
 
 ## Professional support
